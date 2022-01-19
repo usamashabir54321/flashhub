@@ -1,7 +1,11 @@
 <template>
-	<main>
-		<Nuxt keep-alive />
-	</main>
+	<div>
+		<LazyWebHdr />
+		<main>
+			<Nuxt keep-alive />
+		</main>
+		<LazyWebFtr />
+	</div>
 </template>
 
 <style name="common_css">
@@ -14,7 +18,7 @@
 	}
 	body {
 		font-family: -webkit-pictograph;
-		font-weight: 500;
+		font-weight: 900;
 		font-style: normal;
 		font-size: 14px;
 		color: #bcbcbc;
@@ -63,6 +67,13 @@
 		color: #bcbcbc;
 		margin-bottom: 15px;
 	}
+	button, input {overflow: visible;}
+	button, input, optgroup, select, textarea {
+	    margin: 0;
+	    font-family: inherit;
+	    font-size: inherit;
+	    line-height: inherit;
+	}
 	hr {
 		border-bottom: 1px solid #eceff8;
 		border-top: 0 none;
@@ -76,6 +87,7 @@
 		font-size: 14px;
 		font-weight: 400;
 	}
+	.d-none {display: none!important;}
 	*::-moz-selection {
 		background: #d6b161;
 		color: #fff;
@@ -153,21 +165,45 @@
 	}
 	@media (min-width: 768px) {
 		.container, .container-md, .container-sm {max-width: 720px;}
+		.col-md-7 {
+		    flex: 0 0 58.333333%;
+		    max-width: 58.333333%;
+		}
+		.col-md-5 {
+		    flex: 0 0 41.666667%;
+		    max-width: 41.666667%;
+		}
+		.d-md-block {
+		    display: block!important;
+		}
 	}
 	@media (min-width: 992px) {
 		.container, .container-lg, .container-md, .container-sm {max-width: 960px;}
+		.col-lg-3 {
+		    flex: 0 0 25%;
+		    max-width: 25%;
+		}
 		.col-lg-8 {
-		    -ms-flex: 0 0 66.666667%;
 		    flex: 0 0 66.666667%;
 		    max-width: 66.666667%;
+		}
+		.col-lg-9 {
+		    flex: 0 0 75%;
+		    max-width: 75%;
+		}
+		.d-lg-flex {
+		    display: flex!important;
 		}
 	}
 	@media (min-width: 1200px) {
 		.container, .container-lg, .container-md, .container-sm, .container-xl {max-width: 1330px;}
+		.d-xl-block {
+		    display: block!important;
+		}
 	}
 </style>
 <style name="utilities">
-	.mt-25 {margin-top: 25px;}.mb-40 {margin-bottom: 40px;}.f-left {float: left}.f-right {float: right}.fix {overflow: hidden}.uppercase {text-transform: uppercase;}.capitalize {text-transform: capitalize;}.justify-content-center {justify-content: center!important;}.text-center {text-align: center!important;}
+	.mt-25 {margin-top: 25px;}.mb-40 {margin-bottom: 40px;}.f-left {float: left}.f-right {float: right}.fix {overflow: hidden}.uppercase {text-transform: uppercase;}.capitalize {text-transform: capitalize;}.justify-content-center {justify-content: center!important;}.text-center {text-align: center!important;}.align-items-center {align-items: center!important;}
 </style>
 <style name="home_css">
 	.tr-movie-bg2 {
@@ -213,6 +249,7 @@
 	    position: relative;
 	    margin-bottom: 12px;
 	    letter-spacing: 1px;
+	    margin-top: 50px;
 	}
 	.section-title .title {margin-bottom: 0;font-size: 36px;}
 	.movie-item-row .custom-col- {
