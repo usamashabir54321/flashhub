@@ -1,23 +1,44 @@
 <template>
 	<div>
+		<section class="movie-details-area" data-background="img/bg/movie_details_bg.jpg" style="background-image: url(/web/img/bg/movie_details_bg.jpg);">
+			<div class="container">
+				<div class="row position-relative">
+					<div class="col-xl-3 col-lg-4">
+						<div class="movie-details-img">
+							<img src="/web/img/poster/movie_details_img.jpg" alt="">
+							<a href="https://www.youtube.com/watch?v=R2gbPxeNk2E" target="_blank" class="popup-video"><img src="/web/img/images/play_icon.png" alt=""></a>
+						</div>
+					</div>
+					<div class="col-xl-6 col-lg-8">
+						<div class="movie-details-content">
+							<h2>The Easy <span>Reach</span></h2>
+							<div class="banner-meta"><ul><li class="quality"><span>hd</span><span>Action</span><span>Arcade</span></li></ul></div>
+							<p>Lorem ipsum dolor sit amet, consecetur adipiscing elseddo eiusmod tempor.There are many
+								variations of passages of lorem
+							Ipsum available, but the majority have suffered alteration in some injected humour.</p>
+							<div class="movie-details-prime">
+								<a href="https://www.youtube.com/watch?v=R2gbPxeNk2E" target="_blank" class="btn popup-video"><span class="play">&#x23f5;</span> Find Code</a>
+								<a href="https://www.youtube.com/watch?v=R2gbPxeNk2E" target="_blank" class="btn popup-video"><span class="play">&#x23f5;</span> Play Trailer</a>
+							</div>
+						</div>
+					</div>
+					<div class="movie-details-btn">
+						<a href="img/poster/movie_details_img.jpg" class="download-btn" download="">Download <img src="/web/img/fonts/download.svg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</section>
 		<section class="top-rated-movie tr-movie-bg2" style="background-image: url(/web/img/bg/ucm_bg02.jpg);">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-lg-8">
 							<!-- SECTION TITLES -->
 						<div class="section-title title-style-three text-center mb-40">
-							<h2 class="title">Top Online Shows Download</h2>
-						</div>
-							<!-- WEB TAB LISTS -->
-						<div class="tr-movie-menu-active text-center">
-							<button @click="active_tab = 'movies'" :class="active_tab == 'movies' ? 'active' : ''">Movies</button>
-							<button @click="active_tab = 'seasons'"  :class="active_tab == 'seasons' ? 'active' : ''">Seasons</button>
-							<button @click="active_tab = 'animations'"  :class="active_tab == 'animations' ? 'active' : ''">Animations</button>
+							<h2 class="title">Related Items</h2>
 						</div>
 					</div>
 				</div>
 				<div class="row movie-item-row">
-						<!-- ACTIVE TAB CARDS -->
 					<div class="custom-col-">
 						<div class="movie-item movie-item-two">
 							<div class="movie-poster">
@@ -84,50 +105,6 @@
 							</div>
 						</div>
 					</div>
-					<div class="custom-col-">
-						<div class="movie-item movie-item-two">
-							<div class="movie-poster">
-								<img src="/web/img/poster/s_ucm_poster07.jpg" alt="">
-							</div>
-							<div class="movie-content">
-								<div class="rating"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
-								<h5 class="title"><a href="movie-details.html">Message Bottle II</a></h5>
-							</div>
-						</div>
-					</div>
-					<div class="custom-col-">
-						<div class="movie-item movie-item-two">
-							<div class="movie-poster">
-								<img src="/web/img/poster/s_ucm_poster08.jpg" alt="">
-							</div>
-							<div class="movie-content">
-								<div class="rating"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
-								<h5 class="title"><a href="movie-details.html">The Message B.</a></h5>
-							</div>
-						</div>
-					</div>
-					<div class="custom-col-">
-						<div class="movie-item movie-item-two">
-							<div class="movie-poster">
-								<img src="/web/img/poster/s_ucm_poster09.jpg" alt="">
-							</div>
-							<div class="movie-content">
-								<div class="rating"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
-								<h5 class="title"><a href="movie-details.html">Tiger World Q.</a></h5>
-							</div>
-						</div>
-					</div>
-					<div class="custom-col-">
-						<div class="movie-item movie-item-two">
-							<div class="movie-poster">
-								<img src="/web/img/poster/s_ucm_poster10.jpg" alt="">
-							</div>
-							<div class="movie-content">
-								<div class="rating"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
-								<h5 class="title"><a href="movie-details.html">Avenger World IV</a></h5>
-							</div>
-						</div>
-					</div>
 				</div>
 					<!-- SEE ALL LINKS -->
 				<div class="tr-movie-btn text-center mt-25">
@@ -142,15 +119,10 @@
 
 <script>
 	export default {
-		name: 'IndexPage',
+		name: 'SinglePage',
 		head () {
 			return {
-				title: 'ZIP PK HOME',
-			}
-		},
-		data () {
-			return {
-				active_tab : 'movies',
+				title: 'ZIP PK SINGLE PAGE',
 			}
 		},
 	}

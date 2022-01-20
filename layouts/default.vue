@@ -8,7 +8,8 @@
 	</div>
 </template>
 
-<style name="common_css">
+<style>
+		/*COMMON CSS*/
 	*, ::after, ::before {
 		margin: 0;
 		padding: 0;
@@ -158,8 +159,7 @@
 		padding-right: 15px;
 		padding-left: 15px;
 	}
-</style>
-<style name="c_media_query">
+		/*COMMON MEDIA QUERIES*/
 	@media (min-width: 576px) {
 		.container, .container-sm {max-width: 540px;}
 	}
@@ -183,6 +183,10 @@
 		    flex: 0 0 25%;
 		    max-width: 25%;
 		}
+		.col-lg-4 {
+		    flex: 0 0 33.333333%;
+		    max-width: 33.333333%;
+		}
 		.col-lg-8 {
 		    flex: 0 0 66.666667%;
 		    max-width: 66.666667%;
@@ -196,22 +200,29 @@
 		}
 	}
 	@media (min-width: 1200px) {
+		.col-xl-3 {
+		    flex: 0 0 25%;
+		    max-width: 25%;
+		}
+		.col-xl-6 {
+		    flex: 0 0 50%;
+		    max-width: 50%;
+		}
 		.container, .container-lg, .container-md, .container-sm, .container-xl {max-width: 1330px;}
 		.d-xl-block {
 		    display: block!important;
 		}
 	}
-</style>
-<style name="utilities">
-	.mt-25 {margin-top: 25px;}.mb-40 {margin-bottom: 40px;}.f-left {float: left}.f-right {float: right}.fix {overflow: hidden}.uppercase {text-transform: uppercase;}.capitalize {text-transform: capitalize;}.justify-content-center {justify-content: center!important;}.text-center {text-align: center!important;}.align-items-center {align-items: center!important;}
-</style>
-<style name="home_css">
+		/*COMMON UTILITIES*/
+	.mt-25 {margin-top: 25px;}.mb-40 {margin-bottom: 40px;}.f-left {float: left}.f-right {float: right}.fix {overflow: hidden}.uppercase {text-transform: uppercase;}.capitalize {text-transform: capitalize;}.justify-content-center {justify-content: center!important;}.text-center {text-align: center!important;}.align-items-center {align-items: center!important;}.position-relative {position: relative!important;}
+		/*HOME CSS*/
+	.zippk_logo {max-width: 40%;}
 	.tr-movie-bg2 {
 	    background-position: top center;
 	    background-size: cover;
 	    padding: 120px 0 120px;
 	}
-	.movie-item-row {justify-content: space-between;}
+	.movie-item-row {justify-content: center;}
 	.tr-movie-btn .btn {
 	    letter-spacing: 0;
 	    background: #e4d804;
@@ -239,7 +250,6 @@
 	.navbar-wrap > ul > li.active > a, .navbar-wrap > ul > li:hover > a, .mobile-menu .navigation li.active > a, .header-lang form .icon, .banner-content .sub-title, .banner-content .title > span, .banner-meta ul li.release-time > span > i, .banner-meta ul li.category > a:hover, .section-title .sub-title, .movie-content .top .date, .movie-content .bottom ul li .quality, .movie-content .bottom ul li > span i, .movie-content .top .title a:hover, .ucm-active .owl-nav button:hover, .ucm-active-two .owl-nav button:hover, .tr-movie-menu-active button.active, .footer-menu nav .navigation li:hover > a, .quick-link-list ul li a:hover, .footer-social ul li a:hover, .copyright-text > p > a, .mobile-menu .social-links li a:hover, .header-top-link .quick-link li a:hover, .header-top-link .header-social li a:hover, .header-top-subs > p > span, .movie-item-two .movie-content .title a:hover, .movie-content-bottom ul li.tag a:hover, .breadcrumb-content .breadcrumb li a, .breadcrumb-content .title > span {
 		color: #e4d804;
 	}
-	.title-style-three .sub-title {font-weight: 700;color: #bcbcbc;}
 	.section-title .sub-title {
 	    display: block;
 	    line-height: 1;
@@ -260,11 +270,11 @@
 	    padding-right: 15px;
 	    padding-left: 15px;
 	}
-	.movie-item-row .custom-col- .movie-item-two {margin-bottom: 45px;}
+	.movie-item-row .custom-col- .movie-item-two {margin-bottom: 25px;}
 	.movie-item-two {
 	    text-align: center;
 	    background: #1f1e24;
-	    padding: 15px 15px 25px;
+	    padding: 15px;
 	}
 	.movie-poster {margin-bottom: 23px;position: relative;}
 	.movie-item-row .movie-poster {position: relative;}
@@ -283,72 +293,16 @@
 	}
 	.movie-poster img {max-width: 100%;border-radius: 5px;}
 	.movie-item-two .movie-content > .rating {
-	    font-size: 10px;
-	    letter-spacing: -.5px;
-	    color: #e4d804;
-	    margin-bottom: 10px;
+		font-size: 16px;
+		letter-spacing: 3.5px;
+		color: #e4d804;
+		margin-bottom: 10px;
 	}
-	.movie-item-two .movie-content > .rating svg {width: 17px;}
 	.movie-item-two .movie-content .title {
 	    font-size: 16px;
 	    font-weight: 600;
 	    color: #d5d5d5;
 	    margin-bottom: 12px;
-	}
-	.movie-item-two .movie-content .rel {
-	    display: block;
-	    font-size: 12px;
-	    color: #9d9b9b;
-	    font-weight: 900;
-	    letter-spacing: 0.6px;
-	}
-	.movie-content-bottom ul {
-	    display: flex;
-	    align-items: center;
-	    justify-content: space-between;
-	    padding-top: 15px;
-	    margin-top: 25px;
-	    position: relative;
-	}
-	.movie-content-bottom ul::before {
-	    content: "";
-	    position: absolute;
-	    left: 0;
-	    top: 0;
-	    width: 100%;
-	    height: 1px;
-	    background: #000000;
-	}
-	.movie-content-bottom ul::after {
-	    content: "";
-	    position: absolute;
-	    left: 0;
-	    top: 1px;
-	    width: 100%;
-	    height: 1px;
-	    background: #27272f;
-	}
-	.movie-content-bottom ul li.tag {
-	    display: flex;
-	    flex-wrap: wrap;
-	    flex-grow: 1;
-	    margin-right: 30px;
-	}
-	.movie-content-bottom ul li.tag a {
-	    display: block;
-	    color: #a2a2a5;
-	    background: #02050a;
-	    font-size: 12px;
-	    font-weight: 700;
-	    padding: 7px 12px;
-	    line-height: 1;
-	    margin-right: 10px;
-	}
-	.movie-content-bottom ul li .like {font-size: 13px;color: #9d9b9b;}
-	.movie-content-bottom ul li .like .svg-inline--fa.fa-thumbs-up.fa-w-16 {
-	    width: 12px;
-	    margin-right: 5px;
-	    color: #c77f01;
 	}
 	.tr-movie-menu-active {
 	    display: flex;
@@ -386,4 +340,105 @@
 	.tr-movie-menu-active button::after {left: auto;right: 0;}
 	.scroll-top, .btn:hover, .navbar-wrap > ul > li .submenu li a::before, .title-style-two .sub-title::before, .services-list ul li .icon::before, .tr-movie-menu-active button::before, .tr-movie-menu-active button::after {background: #e4d804;}
 	[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {cursor: pointer;}
+		/*NUXT STYLEING*/
+	.nuxt-link-exact-active {color: #e4eb16 !important;}
+	.page-enter-active,.page-leave-active {transition: opacity 0.9s;}
+	.page-enter,.page-leave-to {opacity: 0;}
+		/*SINGLE PAGE STYLING*/
+	.movie-details-area {
+	    background-position: top center;
+	    background-size: cover;
+	    padding: 175px 0 120px;
+	}
+	.movie-details-btn .download-btn {
+	    background: #e4d804;
+	    text-transform: uppercase;
+	    font-size: 12px;
+	    font-weight: 500;
+	    color: #14141d;
+	    letter-spacing: 5px;
+	    position: absolute;
+	    bottom: 65px;
+	    right: -50px;
+	    transform: rotate(90deg);
+	    padding: 43px 49px;
+	    border-radius: 6px;
+	}
+	.download-btn img {
+	    max-width: 24px;
+	    transform: rotate(-90deg);
+	}
+	.movie-details-img {
+	    position: relative;
+	}
+	.movie-details-img img {
+	    border-radius: 5px;
+	}
+	.movie-details-img .popup-video {
+	    position: absolute;
+	    left: 50%;
+	    top: 50%;
+	    transform: translate(-50%, -50%);
+	    z-index: 1;
+	}
+	.movie-details-img img {
+	    border-radius: 5px;
+	}
+	.movie-details-content {
+	    margin-left: 23px;
+	}
+	.movie-details-content h2 {
+	    font-size: 60px;
+	    margin-bottom: 20px;
+	}
+	.banner-meta {
+	    margin-bottom: 35px;
+	}
+	.banner-meta ul {
+	    display: flex;
+	    flex-wrap: wrap;
+	}
+	.banner-meta ul li {
+	    display: flex;
+	    align-items: center;
+	    margin-bottom: 15px;
+	    margin-right: 18px;
+	}
+	.banner-meta ul li.quality > span {
+	    font-size: 11px;
+	    text-transform: uppercase;
+	    font-weight: 700;
+	    line-height: 1;
+	}
+	.banner-meta ul li.quality > span {
+	    background: transparent;
+	    color: #fff;
+	    margin-left: 9px;
+	    border: 2px solid #fff;
+	    padding: 5px 10px;
+	}
+	.movie-details-content .banner-meta {
+	    margin-bottom: 15px;
+	}
+	.movie-details-content p {
+	    font-weight: 600;
+	    padding-left: 10px;
+	}
+	.movie-details-prime {
+	    padding-left: 10px;
+	}
+	.movie-details-prime .btn {
+	    font-size: 12px;
+	    padding: 9px 26px 12px;
+	    letter-spacing: 1px;
+	    margin-right: 5px;
+	    background: transparent;
+	}
+	.movie-details-prime .btn:hover {
+	    background: #e4d804;
+	    color: black;
+	}
+	.movie-details-prime .btn .play {
+	    font-size: 14px;
+	}
 </style>

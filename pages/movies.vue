@@ -6,18 +6,11 @@
 					<div class="col-lg-8">
 							<!-- SECTION TITLES -->
 						<div class="section-title title-style-three text-center mb-40">
-							<h2 class="title">Top Online Shows Download</h2>
-						</div>
-							<!-- WEB TAB LISTS -->
-						<div class="tr-movie-menu-active text-center">
-							<button @click="active_tab = 'movies'" :class="active_tab == 'movies' ? 'active' : ''">Movies</button>
-							<button @click="active_tab = 'seasons'"  :class="active_tab == 'seasons' ? 'active' : ''">Seasons</button>
-							<button @click="active_tab = 'animations'"  :class="active_tab == 'animations' ? 'active' : ''">Animations</button>
+							<h2 class="title">OUR ALL MOVIES</h2>
 						</div>
 					</div>
 				</div>
 				<div class="row movie-item-row">
-						<!-- ACTIVE TAB CARDS -->
 					<div class="custom-col-">
 						<div class="movie-item movie-item-two">
 							<div class="movie-poster">
@@ -129,12 +122,8 @@
 						</div>
 					</div>
 				</div>
-					<!-- SEE ALL LINKS -->
-				<div class="tr-movie-btn text-center mt-25">
-					<nuxt-link v-if="active_tab == 'movies'" to="/movies" class="btn">BROWSE ALL MOVIES</nuxt-link>
-					<nuxt-link v-if="active_tab == 'seasons'" to="/seasons" class="btn">BROWSE ALL SEASONS</nuxt-link>
-					<nuxt-link v-if="active_tab == 'animations'" to="/animations" class="btn">BROWSE ALL ANIMATIONS</nuxt-link>
-				</div>
+					<!-- LOAD MORE -->
+				<div class="tr-movie-btn text-center mt-25"><button class="btn">Load More</button></div>
 			</div>
 		</section>
 	</div>
@@ -142,15 +131,10 @@
 
 <script>
 	export default {
-		name: 'IndexPage',
+		name: 'MoviesPage',
 		head () {
 			return {
-				title: 'ZIP PK HOME',
-			}
-		},
-		data () {
-			return {
-				active_tab : 'movies',
+				title: 'ZIP PK MOVIES PAGE',
 			}
 		},
 	}
