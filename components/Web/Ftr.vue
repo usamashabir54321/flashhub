@@ -4,10 +4,8 @@
 			<div class="container">
 				<div class="footer-menu-wrap">
 					<div class="row align-items-center">
-						<div class="col-lg-3">
-							<div class="footer-logo">
-								<nuxt-link to="/"><img src="/web/img/logo/logo.png" alt="" class="zippk_logo"></nuxt-link>
-							</div>
+						<div class="col-lg-3 pl-0">
+							<div class="footer-logo web_logo"><nuxt-link to="/"><img src="/web/img/logo/logo.png" alt=""></nuxt-link></div>
 						</div>
 						<div class="col-lg-9">
 							<div class="footer-menu">
@@ -18,14 +16,7 @@
 										<li><nuxt-link to="/seasons">Seasons</nuxt-link></li>
 										<li><nuxt-link to="/animations">Animes</nuxt-link></li>
 									</ul>
-									<div class="footer-search">
-										<form action="#">
-											<input type="text" placeholder="FIND FAVORITE MEDIA">
-											<button>
-												<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
-											</button>
-										</form>
-									</div>
+									<div class="main_search"><form action="#"><input type="text" placeholder="FIND FAVORITE MEDIA"><button>🔍</button></form></div>
 								</nav>
 							</div>
 						</div>
@@ -39,11 +30,13 @@
 									<li><a href="#">FAQ</a></li>
 									<li><a href="#">About Us</a></li>
 									<li><a href="#">How To Download</a></li>
+									<li><a href="#">Search</a></li>
+									<li><a href="#">Upcomings</a></li>
 								</ul>
 							</div>
 						</div>
 						<div class="col-md-5">
-							<div class="footer-social">
+							<div class="ul_social">
 								<ul>
 									<li>
 										<a href="#">
@@ -74,117 +67,3 @@
 		</div>
 	</footer>
 </template>
-
-<style>
-	.footer-top-wrap {
-	    background-image: url(/web/img/bg/footer_bg.jpg);
-	    background-position: center;
-	    background-size: cover;
-	    padding: 80px 0 55px;
-	}
-	.footer-menu-wrap {position: relative;padding-bottom: 35px;}
-	.footer-quick-link-wrap {padding-top: 40px;}
-	.footer-menu-wrap::before {
-	    content: "";
-	    position: absolute;
-	    left: 0;
-	    bottom: -1px;
-	    width: 100%;
-	    height: 1px;
-	    background-color: rgb(18, 21, 30);
-	    box-shadow: 0px 3px 0px 0px rgb(143 143 143 / 14%);
-	}
-	.footer-menu nav {
-	    display: flex;
-	    align-items: center;
-	    justify-content: flex-end;
-	}
-	.footer-menu nav .navigation {
-	    display: flex;
-	    align-items: center;
-	    flex-wrap: wrap;
-	}
-	.footer-menu nav .navigation li {margin-right: 27px;}
-	.footer-menu nav .navigation li:last-child {margin-right: 0;}
-	.footer-menu nav .navigation li a {
-	    display: block;
-	    text-transform: uppercase;
-	    color: #c3c3c3;
-	    font-weight: 700;
-	    padding: 10px 10px;
-	    line-height: 1;
-	}
-	.footer-search form {
-	    min-width: 285px;
-	    position: relative;
-	    margin-left: 30px;
-	}
-	.footer-search form input {
-	    width: 100%;
-	    border: none;
-	    background: #12151e;
-	    color: #fff;
-	    padding: 14px 20px;
-	    font-size: 12px;
-	    border-radius: 30px;
-	    padding-right: 60px;
-	    box-shadow: inset 0px 4px 9px 0px rgb(0 0 0 / 25%);
-	}
-	.footer-search form input::placeholder {
-	    color: #656870;
-	    font-weight: 900;
-	    font-size: 12px;
-	}
-	.footer-search form button {
-	    position: absolute;
-	    right: 20px;
-	    top: 52%;
-	    transform: translateY(-50%);
-	    border: none;
-	    background: transparent;
-	    font-size: 12px;
-	    color: #e4d804;
-	    padding: 0;
-	}
-	.footer-search form button::before {
-		content: "|";
-		position: absolute;
-		left: -15px;
-		top: 40%;
-		transform: translateY(-50%);
-		color: #d5d7dd;
-		opacity: 0.6;
-	}
-	svg.svg-inline--fa.fa-search.fa-w-16 {width: 12px;}
-	.quick-link-list ul, .footer-social ul {
-	    display: flex;
-	    align-items: center;
-	    flex-wrap: wrap;
-	}
-	.quick-link-list ul li {margin-right: 50px;margin: 5px 50px 5px 0px;}
-	.quick-link-list ul li a {
-	    color: #bcbcbc;
-	    display: block;
-	    font-weight: 900;
-	    font-size: 13px;
-	    text-transform: uppercase;
-	}
-	.quick-link-list ul li:last-child {margin-right: 0px;}
-	.footer-social ul {justify-content: flex-end;}
-	.footer-social ul li {margin-right: 8px;}
-	.footer-social ul li:last-child {margin-right: 0;}
-	.footer-social ul li a {
-	    display: block;
-	    width: 36px;
-	    height: 36px;
-	    border-radius: 50%;
-	    box-shadow: inset 0px 4px 9px 0px rgb(0 0 0 / 25%);
-	    background-color: rgb(18, 21, 30);
-	    text-align: center;
-	    line-height: 36px;
-	    font-size: 12px;
-	    color: #bcbcbc;
-	}
-	svg.ftr_soc_icon {width: 12px;height: 12px;}
-	.footer-menu .navigation a.active {color: #ddd106;}
-</style>

@@ -1,183 +1,84 @@
 <template>
 	<header class="header-style-two">
-
-		<div id="sticky-header" class="menu-area sticky-menu">
-			<div class="container custom-container">
-				<div class="row">
-					<div class="col-12">
-						<div class="mobile-nav-toggler">
-							<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
-						</div>
-						<div class="menu-wrap">
-
-							<nav class="menu-nav show">
-								<div class="logo">
-									<nuxt-link to="/"><img src="/web/img/logo/logo.png" alt="Logo" class="zippk_logo"></nuxt-link>
-								</div>
-								<div class="navbar-wrap main-menu d-none d-lg-flex">
-									<ul class="navigation">
+	    <div id="sticky-header" class="menu-area sticky-menu">
+	        <div class="container custom-container">
+	            <div class="row">
+	                <div class="col-12">
+	                    <div class="mobile-nav-toggler">☰</div>
+	                    <div class="menu-wrap">
+	                        <nav class="menu-nav show">
+	                            <div class="logo web_logo"><nuxt-link to="/"><img src="/web/img/logo/logo.png" alt="Logo"></nuxt-link></div>
+	                            <div class="navbar-wrap main-menu">
+	                                <ul class="navigation">
 										<li><nuxt-link to="/">Home</nuxt-link></li>
 										<li><nuxt-link to="/movies">Movies</nuxt-link></li>
 										<li><nuxt-link to="/seasons">Seasons</nuxt-link></li>
 										<li><nuxt-link to="/animations">Animes</nuxt-link></li>
 									</ul>
-								</div>
-								<div class="header-action d-none d-md-block">
-									<ul>
-										<li class="d-none d-xl-block">
-											<div class="footer-search">
-												<form action="#">
-													<input type="text" placeholder="FIND FAVORITE MEDIA">
-													<button>
-														<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
-													</button>
-												</form>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</nav>
-						</div>
-
-						<!-- Mobile Menu  -->
-						<!-- <div class="mobile-menu">
-							<div class="close-btn"><i class="fas fa-times"></i></div>
-							<nav class="menu-box">
-								<div class="nav-logo"><a href="index.html"><img src="/web/img/logo/logo.png" alt="" title=""></a>
-								</div>
-								<div class="menu-outer">
-									<ul class="navigation">
-										<li class="active menu-item-has-children"><a href="#">Home</a>
-											<div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
-										</li>
-										<li class="menu-item-has-children"><a href="#">Movie</a>
-											<div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
-										</li>
-										<li><a href="tv-show.html">tv show</a></li>
-										<li><a href="pricing.html">Pricing</a></li>
-										<li class="menu-item-has-children"><a href="#">blog</a>
-											<div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
-										</li>
-										<li><a href="contact.html">contacts</a></li>
-									</ul>
-								</div>
-								<div class="social-links">
-									<ul class="clearfix">
-										<li><a href="#"><span class="fab fa-twitter"></span></a></li>
-										<li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
-										<li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
-										<li><a href="#"><span class="fab fa-instagram"></span></a></li>
-										<li><a href="#"><span class="fab fa-youtube"></span></a></li>
-									</ul>
-								</div>
-							</nav>
-						</div> -->
-						<div class="menu-backdrop"></div>
-						<!-- End Mobile Menu -->
-					</div>
-				</div>
-			</div>
-		</div>
-
+	                            </div>
+	                            <div class="header-action">
+	                                <ul>
+	                                    <li class="header-search">
+	                                    	<div class="main_search"><form action="#"><input type="text" placeholder="FIND FAVORITE MEDIA"><button>🔍</button></form></div>
+	                                    </li>
+	                                </ul>
+	                            </div>
+	                        </nav>
+	                    </div>
+	                    <!-- Mobile Menu  -->
+	                    <!-- <div class="mobile-menu">
+	                        <div class="close-btn"><i class="fas fa-times"></i></div>
+	                        <nav class="menu-box">
+	                            <div class="nav-logo web_logo"><a href="index.html"><img src="/web/img/logo/logo.png" alt="" title=""></a>
+	                            </div>
+	                            <div class="menu-outer">
+	                                <ul class="navigation">
+	                                	<li><nuxt-link to="/">Home</nuxt-link></li>
+	                                	<li><nuxt-link to="/movies">Movies</nuxt-link></li>
+	                                	<li><nuxt-link to="/seasons">Seasons</nuxt-link></li>
+	                                	<li><nuxt-link to="/animations">Animes</nuxt-link></li>
+	                                </ul>
+	                            </div>
+	                            <div class="ul_social">
+	                            	<ul>
+	                            		<li>
+	                            			<a href="#">
+	                            				<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" viewBox="0 0 320 512" class="ftr_soc_icon svg-inline--fa fa-facebook-f fa-w-10">
+	                            					<path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+	                            					</path>
+	                            				</svg>
+	                            			</a>
+	                            		</li> <li>
+	                            			<a href="#">
+	                            				<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" viewBox="0 0 512 512" class="ftr_soc_icon svg-inline--fa fa-twitter fa-w-16">
+	                            					<path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+	                            					</path>
+	                            				</svg>
+	                            			</a>
+	                            		</li> <li>
+	                            			<a href="#">
+	                            				<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="pinterest-p" role="img" viewBox="0 0 384 512" class="ftr_soc_icon svg-inline--fa fa-pinterest-p fa-w-12">
+	                            					<path fill="currentColor" d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z">
+	                            					</path>
+	                            				</svg>
+	                            			</a>
+	                            		</li> <li>
+	                            			<a href="#">
+	                            				<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" role="img" viewBox="0 0 448 512" class="ftr_soc_icon svg-inline--fa fa-linkedin-in fa-w-14">
+	                            					<path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+	                            					</path>
+	                            				</svg>
+	                            			</a>
+	                            		</li>
+	                            	</ul>
+	                            </div>
+	                        </nav>
+	                    </div> -->
+	                    <div class="menu-backdrop"></div>
+	                    <!-- End Mobile Menu -->
+	                </div>
+	            </div>
+	        </div>
+	    </div>
 	</header>
 </template>
-
-<style>
-	.header-style-two {position: relative;}
-	.header-style-two .menu-area {background: #252631;padding: 8px 0;}
-	.custom-container {max-width: 1420px;}
-	.col-12 {
-	    flex: 0 0 100%;
-	    max-width: 100%;
-	}
-	.menu-area .mobile-nav-toggler {
-	    position: relative;
-	    float: right;
-	    font-size: 30px;
-	    cursor: pointer;
-	    line-height: 1;
-	    color: #fff;
-	    display: none;
-	    margin-top: 7px;
-	}
-	.menu-nav {
-	    display: flex;
-	    align-items: center;
-	    flex-wrap: wrap;
-	    justify-content: flex-start;
-	}
-	.navbar-wrap {
-	    display: flex;
-	    flex-grow: 1;
-	}
-	.navbar-wrap > ul {
-	    display: flex;
-	    flex-direction: row;
-	    flex-wrap: wrap;
-	    margin-left: auto;
-	    margin-right: auto;
-	}
-	.navbar-wrap > ul > li {
-	    display: block;
-	    position: relative;
-	}
-	.navbar-wrap > ul > li > a {
-	    font-size: 14px;
-	    font-weight: 700;
-	    text-transform: uppercase;
-	    color: #f0f0f0;
-	    padding: 38px 23px;
-	    display: block;
-	    line-height: 1;
-	    position: relative;
-	    z-index: 1;
-	}
-	.sticky-menu {
-	    left: 0;
-	    padding: 0 0;
-	    margin: auto;
-	    position: fixed;
-	    top: 0;
-	    width: 100%;
-	    z-index: 99;
-	    background: #171d22;
-	    -webkit-animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
-	    animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
-	    -webkit-box-shadow: 0 10px 15px rgb(25 25 25 / 10%);
-	    box-shadow: 0 10px 15px rgb(25 25 25 / 10%);
-	    border-radius: 0;
-	}
-	.header-action > ul {
-	    display: flex;
-	    align-items: center;
-	    margin-left: 10px;
-	}
-	.header-action > ul > li {
-	    position: relative;
-	    margin-left: 30px;
-	}
-	.header-action > ul > li:first-child {margin-left: 0;}
-	.footer-search form {
-	    min-width: 285px;
-	    position: relative;
-	    margin-left: 30px;
-	}
-	.header-style-two .header-action .footer-search form {margin-left: 0;}
-	.header-style-two .menu-area.sticky-menu {padding: 0 0;}
-	.menu-backdrop {
-	    position: fixed;
-	    right: 0;
-	    top: 0;
-	    width: 100%;
-	    height: 100%;
-	    z-index: 2;
-	    transition: all 700ms ease;
-	    -moz-transition: all 700ms ease;
-	    -webkit-transition: all 700ms ease;
-	    -ms-transition: all 700ms ease;
-	    -o-transition: all 700ms ease;
-	    opacity: 0;
-	    visibility: hidden;
-	    background: #171d22;
-	}
-</style>
