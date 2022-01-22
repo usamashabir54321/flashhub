@@ -4,7 +4,7 @@
 	        <div class="container custom-container">
 	            <div class="row">
 	                <div class="col-12">
-	                    <div class="mobile-nav-toggler">☰</div>
+	                    <div @click="$emit('open_sibar')" class="mobile-nav-toggler">☰</div>
 	                    <div class="menu-wrap">
 	                        <nav class="menu-nav show">
 	                            <div class="logo web_logo"><nuxt-link to="/"><img src="/web/img/logo/logo.png" alt="Logo"></nuxt-link></div>
@@ -26,8 +26,8 @@
 	                        </nav>
 	                    </div>
 	                    <!-- Mobile Menu  -->
-	                    <!-- <div class="mobile-menu">
-	                        <div class="close-btn"><i class="fas fa-times"></i></div>
+	                    <div class="mobile-menu">
+	                        <div @click="$emit('close_sibar')" class="close-btn">⨉</div>
 	                        <nav class="menu-box">
 	                            <div class="nav-logo web_logo"><a href="index.html"><img src="/web/img/logo/logo.png" alt="" title=""></a>
 	                            </div>
@@ -40,7 +40,7 @@
 	                                </ul>
 	                            </div>
 	                            <div class="ul_social">
-	                            	<ul>
+	                            	<ul @click="$emit('close_sibar')">
 	                            		<li>
 	                            			<a href="#">
 	                            				<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" viewBox="0 0 320 512" class="ftr_soc_icon svg-inline--fa fa-facebook-f fa-w-10">
@@ -73,7 +73,7 @@
 	                            	</ul>
 	                            </div>
 	                        </nav>
-	                    </div> -->
+	                    </div>
 	                    <div class="menu-backdrop"></div>
 	                    <!-- End Mobile Menu -->
 	                </div>

@@ -106,12 +106,6 @@
 						</div>
 					</div>
 				</div>
-					<!-- SEE ALL LINKS -->
-				<div class="tr-movie-btn text-center mt-25">
-					<nuxt-link v-if="active_tab == 'movies'" to="/movies" class="btn">BROWSE ALL MOVIES</nuxt-link>
-					<nuxt-link v-if="active_tab == 'seasons'" to="/seasons" class="btn">BROWSE ALL SEASONS</nuxt-link>
-					<nuxt-link v-if="active_tab == 'animations'" to="/animations" class="btn">BROWSE ALL ANIMATIONS</nuxt-link>
-				</div>
 			</div>
 		</section>
 	</div>
