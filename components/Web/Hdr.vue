@@ -82,3 +82,8 @@
 	    </div>
 	</header>
 </template>
+
+<style scoped>
+	.main_search form {min-width: 250px;margin-left: 0px;}
+	.header-action > ul {margin-left: 0px;}
+</style>

@@ -27,11 +27,11 @@
 						<div class="col-md-7">
 							<div class="quick-link-list">
 								<ul>
-									<li><a href="#">FAQ</a></li>
-									<li><a href="#">About Us</a></li>
-									<li><a href="#">How To Download</a></li>
-									<li><a href="#">Search</a></li>
-									<li><a href="#">Upcomings</a></li>
+									<li><nuxt-link to="/faq">FAQ</nuxt-link></li>
+									<li><nuxt-link to="/about-us">About Us</nuxt-link></li>
+									<li><nuxt-link to="/how-to-download">How To Download</nuxt-link></li>
+									<li><nuxt-link to="/search">Search</nuxt-link></li>
+									<li><nuxt-link to="/upcomings">Upcomings</nuxt-link></li>
 								</ul>
 							</div>
 						</div>

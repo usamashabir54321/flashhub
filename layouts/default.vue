@@ -178,7 +178,7 @@
 	.page-enter-active,.page-leave-active {transition: opacity 0.9s;}
 	.page-enter,.page-leave-to {opacity: 0;}
 		/*COMMON WEB ELEMENTS STYLE*/
-	.web_logo img {width: 170px;}
+	.web_logo {width: 250px;}.web_logo img {width: 170px;}
 	.main_search form {min-width: 285px;position: relative;margin-left: 30px;}
 	.main_search form input {
 	    width: 100%;
